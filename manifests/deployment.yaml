@@ -33,7 +33,7 @@ spec:
               cpu: "500m"
           env:
           - name: TEAMNAME
-            value: 'Macroview' # will be patched at deployment time by value of 'teamName' in the variable group
+            value: 'teamName' # will be patched at deployment time by value of 'teamName' in the variable group
           - name: MONGOHOST
             valueFrom:
               secretKeyRef:
